@@ -1,0 +1,29 @@
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script type="text/javascript" language="javascript" src="./js/swfobject.js"></script>
+		<script type="text/javascript" language="javascript" src="./js/AnyChart.js"></script>
+		
+		<script type="text/javascript" language="JavaScript">
+			AnyChart.swfFile = "./swf/AnyChart.swf";
+			
+			var chart = new AnyChart();
+			chart.setXMLFile("data.xml");
+
+			chart.write("chart_container");
+			
+			var flashVars = {targetChart: 'chart'};
+			swfobject.embedSWF("AnyChartExternalSaveButton.swf", "saveAsImageButton", "100", "22", "10.0.0", null, flashVars);
+		</script>
+		<title>Sample Print and Save Buttons</title>
+	</head>
+	<body>
+		<h1>Sample Print and Save Buttons</h1>
+		<p>Click on <b>Save Chart As Image</b> or <b>Print Chart</b> buttons</b>
+			<p id="saveAsImageButton"></p>
+
+			<div id="chart_container"></div>
+			
+	</body>
+</html>

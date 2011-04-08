@@ -1,0 +1,40 @@
+<anychart>
+<charts>
+<chart plot_type="CategorizedHorizontal">
+	<data>
+		<series name="Year 2003" type="Bar">
+			<point name = "Department Stores" y="637166"/>		
+			<point name = "Discount Stores" y="721630"/>			
+			<point name = "Men's/Women's Specialty Stores" y="148662"/>
+			<point name = "Juvenile Specialty Stores" y="78662"/>
+			<point name = "All other outlets" y="90000"/>						
+		</series>
+	</data>		
+	<data_plot_settings>
+		<bar_series>
+			<tooltip_settings enabled="True"/>
+		</bar_series>
+	</data_plot_settings>
+	<chart_settings>
+		<title enabled="false"/>
+		<axes>
+			<y_axis position="Opposite">
+				<title>
+					<text>Sales</text>
+				</title>
+				<labels>
+					<format>{%Value}{numDecimals:0}</format>
+				</labels>
+			</y_axis>
+			<x_axis>
+			     <labels align="Inside"/>
+				 
+				<title>
+					<text>Retail Channel</text>
+				</title>
+			</x_axis>
+		</axes>
+	</chart_settings>	
+</chart>
+</charts>
+</anychart>
